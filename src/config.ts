@@ -1,27 +1,59 @@
 export const siteConfig = {
   name: "Andrzej Fijało",
-  title: "Software Engineer",
+  title: "R&D / MLOps Engineer",
   description: "Portfolio website of Andrzej Fijało",
   accentColor: "#d8811dff",
   social: {
     email: "andrzejfijalo@gmail.com",
+    phone: "796 630 960",
     linkedin: "https://linkedin.com/in/andrzejfijalo",
     github: "https://github.com/AnrzejAF",
   },
-  aboutMe:
-    `I'm an engineer with a strong background in low-level programming and image processing, focused on building and optimizing efficient vision systems. I work comfortably in Linux environments — both as a user and a system administrator — automating workflows, configuring systems, and writing scripts in Bash and Zsh.
-    My daily toolbox includes Git, Docker, and Confluence, and I specialize in video and image processing using GStreamer, DeepStream, OpenCV, YOLO, and TensorRT. I primarily develop on NVIDIA Jetson platforms, designing solutions that balance hardware constraints with AI performance requirements.
-    I have hands-on experience delivering end-to-end systems — from sensor integration and hardware setup to implementation, performance tuning, and documentation. I've also worked with ROS and containerized environments in drone and automation-related projects.
+  aboutMe: `I'm an R&D / MLOps Engineer specializing in machine learning operations, model deployment, and computer vision for autonomous systems. With extensive experience in drone technology and unmanned systems, I focus on building efficient ML pipelines and optimizing vision systems.
+    I work comfortably in Linux environments as both a user and system administrator, automating workflows with Bash, Zsh, and tools like Nix and Jenkins. My expertise spans computer vision using OpenCV, GStreamer, DeepStream, YOLO, CUDA, VPI, and FFmpeg, alongside ML frameworks like PyTorch, MLflow, Kedro, and TensorRT.
+    I primarily develop on NVIDIA Jetson platforms, balancing hardware constraints with AI performance. I have hands-on experience delivering end-to-end systems — from sensor integration and hardware setup to implementation, performance tuning, and documentation — in drone and automation projects.
     I value open technologies, technical clarity, and close collaboration across engineering disciplines.`,
-  tools: ["C++", "Python", "Bash", "Git", "Docker", "CMake"],
-  visions: ["OpenCV", "GStreamer", "DeepStream", "YOLO", "CUDA", "VPI", "FFmpeg"],
-  robotics: ["Jetson", "Linux", "ROS", "V4L2", "OpenFOAM"],
+  tools: [
+    "C++",
+    "Python",
+    "Bash",
+    "Git",
+    "Nix",
+    "Docker",
+    "CMake",
+    "uv",
+    "Jenkins",
+  ],
+  visions: [
+    "OpenCV",
+    "GStreamer",
+    "DeepStream",
+    "YOLO",
+    "CUDA",
+    "VPI",
+    "FFmpeg",
+  ],
+  robotics: ["NVIDIA Jetson", "Linux", "ROS", "V4L2", "OpenFOAM"],
+  machineLearning: ["PyTorch", "MLflow", "Kedro", "TensorRT"],
+  devops: ["Docker", "NixOS", "MLflow", "Auth", "edge-AI deployment"],
   experience: [
     {
       company: "Advanced Protection Systems",
       title: "R&D Engineer / Software Developer",
       dateRange: "2022 - Present",
       bullets: [
+        "Work on autonomous systems and image processing for unmanned systems, including development of MLOps and ML pipelines.",
+        "Development and optimization of image processing pipelines (object detection, visual odometry).",
+        "Designing and optimizing video pipelines in GStreamer and DeepStream on NVIDIA Jetson platforms.",
+        "Integration of AI solutions (YOLO, TensorRT, OpenCV) in embedded systems.",
+        "Refactoring codebase to Kedro + MLflow, configuring external logging, edge-AI deployment, model versioning and result visualizations.",
+        "Building self-hosted MLOps using Docker and MLflow for tracking model training.",
+        "Integrating Auth0 / OIDC authentication for MLflow with roles and groups.",
+        "Hardware debugging and integration of new sensors.",
+        "Analysis and optimization of system resource usage (CPU, GPU, RAM).",
+        "Creating developer tools to improve team workflow.",
+        "Technology research and preparing technical documentation.",
+        "Mentoring interns.",
       ],
     },
     {
@@ -29,15 +61,25 @@ export const siteConfig = {
       title: "Lead Product Developer",
       dateRange: "2018 - 2022",
       bullets: [
+        "Development of technology products in a small engineering team.",
+        "Designing and bringing new products from concept to production.",
+        "Optimizing manufacturing processes (assembly, testing, quality control).",
+        "Designing enclosures and selecting electronic and mechanical components.",
+        "Performing functional and environmental product testing.",
+        "Creating technical and production documentation.",
+        "Collaborating with suppliers and subcontractors on prototyping and production.",
+        "Analyzing customer requirements and adapting products.",
       ],
-    }
+    },
   ],
   education: [
     {
       school: "Gdańsk University of Technology",
-      degree: "Master of Science, Computer Science - coursework completed",
+      degree: "Master of Science, Computer Science",
       dateRange: "2023 - 2025",
       achievements: [
+        "Eng. Faculty of Electronics, Telecommunications and Informatics",
+        "Specialization: Mobile Systems and Technologies",
       ],
     },
     {
@@ -45,7 +87,9 @@ export const siteConfig = {
       degree: "Bachelor of Science, Automation and Robotics",
       dateRange: "2018 - 2022",
       achievements: [
+        "Faculty of Electrical and Control Engineering",
+        "Profile: Automation and Robotics",
       ],
-    }
+    },
   ],
 };
